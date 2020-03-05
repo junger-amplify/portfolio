@@ -6050,3 +6050,6 @@ body {
   border-radius: 0.5em;
   margin: 0.5em 0;
   padding: 2em; }
+
+.nav-column {
+  order: -1; }
