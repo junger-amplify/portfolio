@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 body {
-    background-color: $gray-1;
+    background-color: $black;
 }
 
 .hero {
@@ -29,4 +29,12 @@ body {
     border-radius: 0.5em;
     margin: 0.5em 0;
     padding: 2em;
+}
+.art-thumb {
+    width: 100%;
+    height: auto;
+}
+
+.thumb-box {
+
 }
