@@ -6029,6 +6029,23 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background-color: #000; }
 
+.container-header {
+  padding: 100px;
+  color: #ffffff; }
+  .container-header h1 {
+    text-align: center; }
+  .container-header .logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 50px auto; }
+
+ul {
+  color: white; }
+
+.container-home {
+  padding: 0 100px; }
+
 .hero {
   align-items: center;
   background-image: url("../images/dumbo.jpg");
