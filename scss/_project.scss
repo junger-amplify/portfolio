@@ -28,6 +28,7 @@ font-weight: 100;
     width: 854px;
     font-size: 21px;
     line-height: 1.5;
+    margin: 0 auto; // we were missing this
 
     p {margin-top: 2em;}
 
