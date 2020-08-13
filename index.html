@@ -1,86 +1,658 @@
 <!doctype html>
 <html lang="en">
 ​
+
 <head>
     <meta charset="utf-8">
     <title>My Project</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 ​
+
 <body>
     <div class="container-fluid container-header">
-        <img src="images/JS_Logo_White.png" class="logo">
+        <a href="index.html"><img src="images/JS_Logo_White.png" class="logo"></a>
     </div>
     <ul class="main-nav">
-        <li> <a href="http://juliaidrawings.blogspot.com/">Gallery</a> </li>
-        <li> <a href="https://www.juliasverchuk.com">Artist Statement </a> </li>
-        <li><a href="https://www.juliasverchukstore.com/">About</a></li>
-        <li><a href="https://www.juliasverchukstore.com/">Contact </a></li>
-        <li><a href="https://www.juliasverchukstore.com/">Links</a> </li>
+        <li> <a href="index.html" class="selected-page">Gallery</a> </li>
+        <li> <a href="statement.html">Artist Statement </a> </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li><a href="shows.html">Shows</a> </li>
     </ul>
-    <h1>
-    </h1>
+    
+            <h1>The Nature of Space and Time</h1>
+
+    
     <div class="container-fluid container-home">
         <div class="row">
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_01.png" class="art-thumb"></a>
+                    <!-- change for each image -->
+                    <a href="#" data-toggle="modal" data-target="#modal-ice-giant"><img src="images/img_01.png" class="art-thumb"></a>
                 </div>
+                ​
+                <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-ice-giant" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Ice Giant</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_01.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                ​
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_02.png" class="art-thumb"></a>
+                    <a href="#" data-toggle="modal" data-target="#modal-red-planet"><img src="images/img_02.png" class="art-thumb"></a>
                 </div>
+                <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-red-planet" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Red Planet</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="red-planet" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#red-planet" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#red-planet" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                ​
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_03.png" class="art-thumb"></a>
+                    <a href="#" data-toggle="modal" data-target="#great-red-spot"><img src="images/img_03.png" class="art-thumb"></a>
                 </div>
+            </div>
+
+             <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="great-red-spot" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Great Red Spot</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="great-red-spot" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_03.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#great-red-spot" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#great-red-spot" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+
+
+            <div class="col-md-4 img-col">
+                <div class="content-box">
+                     <a href="#" data-toggle="modal" data-target="#modal-dark-energy"><img src="images/img_04.png" class="art-thumb"></a>
+                </div>
+
+
+
+                <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-dark-energy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Dark Energy</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="dark-energy" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#dark-energy" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#dark-energy" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                ​
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_04.png" class="art-thumb"></a>
+                     <a href="#" data-toggle="modal" data-target="#modal-entropy"><img src="images/img_05.png" class="art-thumb"></a>
                 </div>
+
+
+
+                 <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-entropy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Entropy</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="Entropy" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_05.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#Entropy" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#Entropy" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                ​
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_05.png" class="art-thumb"></a>
+                    <a href="#" data-toggle="modal" data-target="#modal-white-dwarf"><img src="images/img_06.png" class="art-thumb"></a>
                 </div>
+
+
+
+                 <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-white-dwarf" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">White Dwarf</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="white-dwarf" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_06.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#white-dwarf" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#white-dwarf" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                ​
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_06.png" class="art-thumb"></a>
+                   <a href="#" data-toggle="modal" data-target="#modal-gas-giant"><img src="images/img_07.png" class="art-thumb"></a>
                 </div>
+
+
+                  ​
+                <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-gas-giant" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Gas Giant</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="gas-giant" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_07.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#gas-giant" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#gas-giant" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                ​
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_07.png" class="art-thumb"></a>
+                      <a href="#" data-toggle="modal" data-target="#modal-quantum-entanglement"><img src="images/img_08.png" class="art-thumb"></a>
                 </div>
+
+
+
+                  <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-quantum-entanglement" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Quantum Entanglement</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="quantum-entanglement" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_08.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#quantum-entanglement" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#quantum-entanglement" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_08.png" class="art-thumb"></a>
+                   <a href="#" data-toggle="modal" data-target="#modal-particle-energy-levels"><img src="images/img_09.png" class="art-thumb"></a>
                 </div>
+
+
+                  <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-particle-energy-levels" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Paricle Energy Levels</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="particle-energy-levels" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_09.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#particle-energy-levels" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#particle-energy-levels" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_09.png" class="art-thumb"></a>
+                  <a href="#" data-toggle="modal" data-target="#modal-sunrise-vase"><img src="images/img_10.png" class="art-thumb"></a>
                 </div>
+
+
+
+<!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-sunrise-vase" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Sunrise Vase</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="sunrise" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_10.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#sunrise" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#sunrise" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_10.png" class="art-thumb"></a>
+                    <a href="#" data-toggle="modal" data-target="#modal-black-hole"><img src="images/img_11.png" class="art-thumb"></a>
                 </div>
+
+
+                  ​
+                <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-black-hole" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Black Hole Swallowing a Star</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="black-hole" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_11.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#black-hole" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#black-hole" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+
+
+
             </div>
             <div class="col-md-4 img-col">
                 <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_11.png" class="art-thumb"></a>
+                     <a href="#" data-toggle="modal" data-target="#modal-interference-pattern"><img src="images/img_12.png" class="art-thumb"></a>
                 </div>
-            </div>
-            <div class="col-md-4 img-col">
-                <div class="content-box">
-                    <a href="https://www.juliasverchuk.com"><img src="images/img_12.png" class="art-thumb"></a>
+
+
+                  ​
+                <!-- Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+                <div class="modal fade" id="modal-interference-pattern" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Interference Pattern</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-text">The musica universalis (literally universal music), also called music of the spheres or harmony of the spheres, is an ancient philosophical concept that regards proportions in the movements of celestial bodies—the Sun, Moon, and planets—as a form of music. This "music" is not thought to be audible, but rather a harmonic, mathematical or religious concept. Further scientific exploration discovered orbital resonance in specific proportions in some orbital motion.</p>
+                                ​
+                                <!-- Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                <div id="interference" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="carousel-image d-block w-100" src="images/img_12.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_02.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="carousel-image d-block w-100" src="images/img_04.png" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#interference" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#interference" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- / Hastily copied from: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+                                ​
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- / Originally pasted from https://getbootstrap.com/docs/4.0/components/modal -->
+
+
+
             </div>
         </div>
     </div>
@@ -96,5 +668,6 @@
     <!-- / jQuery & Bootstrap scripts. -->
 </body>
 ​
-</html>
 
+</html>
+​

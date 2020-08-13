@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6027,6 +6028,8 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   background-color: #000; }
 
 .container-header {
@@ -6040,16 +6043,27 @@ body {
     display: block;
     margin: 0 auto; }
 
+.text-column {
+  color: #ffffff;
+  width: 854px;
+  font-size: 21px;
+  line-height: 1.5; }
+  .text-column p {
+    margin-top: 2em; }
+
 .main-nav {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin: 40px 0;
-  padding: 40px, 0; }
+  margin: 60px 0 40px 0;
+  padding: 0; }
   .main-nav a {
     color: white; }
   .main-nav li {
     margin: 0 10px; }
+  .main-nav .selected-page {
+    font-weight: bold;
+    pointer-events: none; }
 
 .container-home {
   padding: 0 100px; }
@@ -6069,27 +6083,68 @@ body {
   text-align: center;
   text-shadow: 0 0 0.2em #000000; }
 
-.content-box {
-  background-color: black;
-  border: 1px solid #f6f6f6;
-  border-radius: 0.1em;
-  margin: 0.2em 0;
-  width: 80%;
-  height: 80%;
-  padding-bottom: 80%;
-  position: relative;
-  margin-bottom: 30px; }
-
-.art-thumb {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover; }
-
-.thumb-box {
-  height: 100%;
-  width: 100%; }
-
 .img-col {
   margin-bottom: 30px; }
+
+.content-box {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative; }
+
+.art-thumb {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: block;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  object-fit: cover;
+  left: 50%;
+  top: 50%;
+  margin-left: -35%;
+  margin-top: -35%; }
+
+.modal .close {
+  color: #fff;
+  text-shadow: none;
+  margin: 0.5rem 0.5rem 0 auto; }
+
+.modal .modal-header {
+  padding: 2rem 2rem 0 2rem;
+  border: none; }
+
+.modal .modal-title {
+  color: #fff; }
+
+.modal .modal-dialog {
+  max-width: 60vw; }
+
+.modal .modal-content {
+  background-color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 90vh; }
+
+.modal .modal-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%; }
+
+.modal .modal-text {
+  color: #fff; }
+
+.carousel {
+  height: 100%;
+  min-height: 0; }
+
+.carousel-inner {
+  height: 100%; }
+
+.carousel-item {
+  height: 100%; }
+
+.carousel-image {
+  height: 100%;
+  object-fit: contain; }

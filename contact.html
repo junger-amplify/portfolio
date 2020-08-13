@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+​
+<head>
+    <meta charset="utf-8">
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+​
+<body>
+    <div class="container-fluid container-header">
+        <a href="index.html"><img src="images/JS_Logo_White.png" class="logo"></a>
+    </div>
+    <ul class="main-nav">
+        <li> <a href="index.html" >Gallery</a> </li>
+        <li> <a href="statement.html" >Artist Statement </a> </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="selected-page">Contact </a></li>
+        <li><a href="shows.html">Shows</a> </li>
+    </ul>
+
+    <h1>email me - I'd love to hear from you <a href="mailto:email@example.com">jsverchuk@gmail.com</a>
+        <p>
+        follow me on IG <a href="https://www.instagram.com/juliasverchuk/" >@juliasverchuk</a></h1>
+
+
+    <!-- jQuery & Bootstrap scripts. (Include on all pages.) -->
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+    <!-- / jQuery & Bootstrap scripts. -->
+</body>
+​
+</html>
+
